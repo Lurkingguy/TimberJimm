@@ -1,2 +1,2 @@
 # TimberJimm
-Server
+Demo website
