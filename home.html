@@ -2,28 +2,88 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>TimberCuong Server</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timberblack Server</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
-	<div class="wrapper">
-			<nav class="navbar">
-				<img class="logo" src="" href="home.html">
-				<ul>
-					<li><a class="active" href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="memories.html">Memories</a></li>
-					<li><a href="showcase.html">Showcase</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="center">
-			<h1>Welcome</h1>
-			<h2>Come Join Our Journey</h2>
-			<div class="buttons">
-			<button>Explore More</button>
-			<button class="btn2">Subscribe Us</button>
-		</div>
-	</div>
+    <div class="menu-area">
+        <a href="index.html" class="logo">Timberblack</a>
+        <ul class="navbar" id="navbar">
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="showcase.html">Showcase</a> </li>
+            <li> <a href="contact.html">Contact Us</a> </li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="home">
+            <div class="content">
+                <h1>Creatve Design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, velit delectus eveniet qui deserunt amet tempora eligendi exercitationem labore numquam, blanditiis ab saepe excepturi suscipit quis quod officiis. Veritatis, suscipit.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="content">
+                <h1>Portfolio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum dolor alias minima. Perspiciatis necessitatibus fugiat ullam magni tempore incidunt autem, sunt unde quis, debitis, omnis nobis facilis. Tenetur, nam?</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="content">
+                <h1>About Section</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quasi tenetur amet harum iure possimus perspiciatis ab ullam doloribus. Quibusdam aliquam dolore excepturi illum cumque perspiciatis et reprehenderit sapiente voluptate.</p>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <div class="content">           <!-- Same as services above --> 
+                <h1>Contact Section</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo a quae dolores quia, voluptate totam sed numquam, molestiae ea porro repudiandae perspiciatis iusto eveniet ut distinctio omnis dolorum soluta! Neque.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>TIMBERBLACK</h2>
+                <p>Growing and changing</p>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=61573918492307"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@timberblack8"><img src="icons/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="icons/tiktok.svg" alt="TikTok"></a>
+                <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 - Timberblack</p>
+            <a>Privacy and Cookies</a>
+        </div>
+    </footer>
 </body>
+
+<!--
+<script>
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", function() {
+        var navbar = document.getElementById("navbar");
+        let scrollTop = window.scrollY;
+        
+        if (scrollTop > lastScrollTop) {
+            navbar.classList.add("hidden"); /* Ẩn khi cuộn xuống */
+        } else {
+            navbar.classList.remove("hidden"); /* Hiện khi cuộn lên */
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+</script>
+-->
 </html>
