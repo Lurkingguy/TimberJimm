@@ -74,7 +74,7 @@ a {
     color: #fff;
 }
 
-#portfolio, #services, #conclusion {
+#portfolio, #ambition, #conclusion {
     position: relative;
     display: flex;
     justify-content: space-around;

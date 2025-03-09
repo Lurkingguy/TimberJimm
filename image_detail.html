@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Detail</title>
+    <link rel="stylesheet" href="css/image_detail.css">
+    
+    
+    <script>
+        function loadImage() {
+            const params = new URLSearchParams(window.location.search);
+            const imgSrc = params.get('img');
+            const title = params.get('title');
+            
+            if (imgSrc) {
+                document.getElementById('image').src = imgSrc;
+                document.getElementById('download-link').href = imgSrc;
+            }
+            
+            if (title) {
+                document.getElementById('title').innerText = title;
+            }
+        }
+        
+        window.onload = loadImage;
+    </script>
+
+    
+</head>
+<body>
+    <div class="image-container">
+        <h1 id="title">Image Title</h1>
+        <img id="image" src="" alt="Image Preview">
+        <a id="download-link" download><button>Download Image</button></a>
+        <p class="instructions">Use this image as a wallpaper by right-clicking and selecting 'Set as Background'.</p>
+    </div>
+</body>
+</html>
