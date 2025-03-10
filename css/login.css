@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 850px;
+    height: 500px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    flex: 1;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #07b43b;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #07b43b;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #05852d;
+}
+
+.toggle-form {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.toggle-form a {
+    color: #07b43b;
+    text-decoration: none;
+}
+
+.toggle-form a:hover {
+    text-decoration: underline;
+}
+
+/* Back home button */
+
+.back-home {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.back-home a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-home a:hover {
+    background-color: #07b43b;
+    color: white;
+}

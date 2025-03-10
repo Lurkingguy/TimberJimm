@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Google Sans', sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            width: 250px;
+            background: #2B8E30;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+        }
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .sidebar a:hover {
+            background: #1B5E20;
+            padding-left: 25px;
+            letter-spacing: 1px;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        h1 {
+            color: #2B8E30;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .footer {
+            background: #535353;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-icons img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .footer-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer p {
+            color: white;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" onclick="showContent('about-timberjim')">About TimberJim</a>
+        <a href="#" onclick="showContent('about-terms')">About Terms</a>
+        <a href="#" onclick="showContent('about-privacy')">About Privacy</a>
+        <a href="#" onclick="showContent('about-cookies')">About Cookies</a>
+        <a href="home.html">Back to Home</a>
+    </div>
+    <div class="content">
+        <div id="about-timberjim" class="content-section" style="display: block;">
+            <h1>About TimberJim</h1>
+            <p>TimberJim is an innovative platform showcasing artistic photography while ensuring a smooth user experience.</p>
+        </div>
+        <div id="about-terms" class="content-section" style="display: none;">
+            <h1>About Terms</h1>
+            <p>By using our platform, you agree to our terms and conditions, which ensure fair usage and a secure environment.</p>
+        </div>
+        <div id="about-privacy" class="content-section" style="display: none;">
+            <h1>About Privacy</h1>
+            <p>We respect your privacy and are committed to protecting your personal information while using our platform.</p>
+        </div>
+        <div id="about-cookies" class="content-section" style="display: none;">
+            <h1>About Cookies</h1>
+            <p>Cookies help us improve your experience by remembering preferences and enhancing website functionality.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>TIMBERBLACK</h2>
+                <p>Growing and changing</p>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=61573918492307"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@timberblack8"><img src="icons/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="icons/tiktok.svg" alt="TikTok"></a>
+                <a href="https://mail.google.com"><img src="icons/gmail.svg" alt="Gmail"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 - Timberblack</p>
+            <a>Copyright 2024-2025 by Timberblack. All Rights Reserved</a>
+            <a> </a>
+        </div>
+    </footer>
+</body>
+</html>

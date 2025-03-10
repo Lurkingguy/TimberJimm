@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Timberblack Server</title>
+    <title>Timberblack Server</title>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home_navbar.js" defer></script>
 </head>
-
 <body>
     <div class="menu-area">
         <a href="index.html" class="logo">Timberblack</a>
         <ul class="navbar" id="navbar">
-            <li> <a href="home.html">Home</a> </li>
-            <li> <a href="showcase.html">Showcase</a> </li>
-            <li> <a href="contact.html">Contact Us</a> </li>
+            <li><a class="button" href="home.html">Home</a></li>
+            <li><a class="button" href="showcase.html">Showcase</a></li>
+            <li><a class="button" href="contact.html">Contact Us</a></li>
+            <li><a class="button" href="about.html">About Us</a></li>
+            <li><a class="button" href="login.html">Login</a></li>
         </ul>
     </div>
-
     <main>
         <section id="home">
             <div class="content">
-                <h1>Creatve Design</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, velit delectus eveniet qui deserunt amet tempora eligendi exercitationem labore numquam, blanditiis ab saepe excepturi suscipit quis quod officiis. Veritatis, suscipit.</p>
+                <h1>Creative Design</h1>
+                <p>TIMBER INDUSTRIES</p>
             </div>
         </section>
-
         <section id="portfolio">
             <div class="content">
                 <h1>About Us</h1>
                 <p>The name of two guys Timberblack and Jimmie that 4 years' playing together.
                 We have been through a lot of servers, but we have never been able to find a server that suits us. So we decided to create our own.
-                Our server has been worked on for 2 years and we're still working on it. Hopefully y'all will have a great time on our server showcase.</p>
-                </p>
+                It has been worked on for 2 years and we're still working on it. Hopefully y'all will have a great time on our website.</p>
             </div>
         </section>
-
         <section id="ambition">
             <div class="content">
                 <h1>Our Goals</h1>
                 <p>The server has known for being 4 years with Timber and Jim together. We have so much memorable moment here</p>
             </div>
         </section>
-
         <section id="conclusion">
-            <div class="content">           <!-- Same as services above --> 
+            <div class="content">           
                 <h1>Contact Section</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo a quae dolores quia, voluptate totam sed numquam, molestiae ea porro repudiandae perspiciatis iusto eveniet ut distinctio omnis dolorum soluta! Neque.</p>
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
@@ -63,32 +58,14 @@
                 <a href="https://www.youtube.com/@timberblack8"><img src="icons/youtube.svg" alt="YouTube"></a>
                 <a href="#"><img src="icons/tiktok.svg" alt="TikTok"></a>
                 <a href="https://mail.google.com"><img src="icons/gmail.svg" alt="Gmail"></a>
-
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>© 2025 - Timberblack</p>
-            <a>Privacy and Cookies</a>
+            <a>Copyright 2024-2025 by Timberblack. All Rights Reserved</a>
+            <a> </a>
+            <a href="privacy.html">Privacy and Cookies</a>
         </div>
     </footer>
 </body>
-
-<!--
-<script>
-    let lastScrollTop = 0;
-    window.addEventListener("scroll", function() {
-        var navbar = document.getElementById("navbar");
-        let scrollTop = window.scrollY;
-        
-        if (scrollTop > lastScrollTop) {
-            navbar.classList.add("hidden"); /* Ẩn khi cuộn xuống */
-        } else {
-            navbar.classList.remove("hidden"); /* Hiện khi cuộn lên */
-        }
-        
-        lastScrollTop = scrollTop;
-    });
-</script>
--->
 </html>
