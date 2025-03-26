@@ -29,7 +29,7 @@ img {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #07b43b;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -39,7 +39,8 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #606060;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .instructions {
